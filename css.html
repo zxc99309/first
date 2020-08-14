@@ -1,22 +1,29 @@
 <title>CSS</title>
 
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+</head>
+
 <style>
-    p {
-        
-        border-style: dotted;
-        border: thick;
-        border-color: rgb(5, 243, 76);
-        border-style: dotted dashed solid double;
-        border-radius: 10px 0 0 0;
-        margin: 10px;
-        padding: 20px;
+   table{
+       width: 50vw;
+       height: 50vh;
+       text-align: center;
+       vertical-align: middle;
+   }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items:center
     }
 </style>
 
 <body>
 
-    <p class="dotted">A dotted border.</p>
-    <p class="dotted">A dotted border.</p>
-    <p class="dotted">A dotted border.</p>
-
+    <table border="3" class="box">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </table>
+ 
 </body>
