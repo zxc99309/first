@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            display: grid;
+            grid-template: repeat(12, 1fr);
+            height: 100%;
+            margin: 0;
+            text-align: center;
+        }
+        div{
+            border-style: dotted;
+            border:brown;
+        }
+
+        div.new{
+            grid-area:1/2/span 2/span 7;
+            border:brown;
+            border-style:dotted;
+        }
+        div.vip{
+            grid-area: 1/9/span 2/ 12;
+            border: brown;
+            border-style:dotted;
+            border-left-width: 0;
+        }
+        img.mark{
+            grid-area:1/1/span 2/span 3;
+        }
+        div.search{
+            grid-area: 5/1/span 2/span 1;
+            border: brown;
+            border-style:dotted;
+        }
+        div.form{
+            grid-area: 7/1/12/sapn 1;
+            border: brown;
+            border-style:dotted;
+        }
+        div.sort{
+            grid-area:5/2/sapn 2/12;
+            border: brown;
+            border-style:dotted;
+        }
+        ul.items{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="CPBL.png" class="mark">
+    <div class="new">
+        最新消息
+    </div>
+    <div class="vip">
+        會員專區
+        <ul class="items">
+            <li>1111111111</li>
+            <li>2222222222</li>
+            <li>3333333333</li>  
+            <li>4444444444</li>
+            <li>5555555555</li>
+            <li>6666666666</li>
+            <li>7777777777</li>
+            <li>8888888888</li>
+            <li>9999999999</li>
+        </ul>
+    </div>
+    <div class="search">
+        搜尋
+    </div>
+    <div class="form">
+        清單    
+    </div>
+    <div class="sort">
+        排序方法
+    </div>
+    <div>
+        
+    </div>
+</body>
+
+</html>
