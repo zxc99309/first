@@ -11,17 +11,16 @@
     body {
         background-color: teal;
         display: grid;
-        display: grid;
-        grid-template-columns: 400px 400px 400px;
-        grid-template-rows: 400px 400px 400px 400px;
+        grid-template:repeat(12, 1fr);
+        height: 100%;
+        margin: 0;
     }
 
 
     table {
         border-radius: 30px;
         font-size: 20px;
-        grid-column: 2/4;
-        grid-row: 1/4;
+        grid-area: 2/4/12/12;
 
     }
 
@@ -44,7 +43,7 @@
     table caption {
         font-family: 'Noto Sans TC', sans-serif;
         font-size: 30px;
-        flex-direction: column;
+
     }
 
     tr th {
@@ -82,23 +81,43 @@
         font-weight: 900;
     }
 
+    div.head{
+        background-color: aqua;
+        grid-column: 1/span 12;
+        text-align: center;
+        font-size: 34px;
+        font-weight:bold;
+        font-family: 'Noto Sans TC', sans-serif
+    }
+    div.footer{
+        background-color: aqua;
+        grid-column: 1/span 12;
+        text-align: center;
+        font-size: 34px;
+        font-weight:bold;
+        font-family: 'Noto Sans TC', sans-serif
+    }
+
     ul {
-        grid-row: 1;
         font-size: 20px;
+        grid-area: 2/1/span 1/span 3;
+        font-family: 'Noto Sans TC', sans-serif
     }
 
     img.a {
-        grid-row: 2
+       grid-area: 3/1/span 4/span 3;
     }
 
     img.b {
-        grid-row: 3
+        grid-area:7/1/span 4/span 3
     }
 </style>
 
 
 <body>
-
+    <div class="head">
+        選課系統
+    </div>
     <ul class="a">
         <li>學號 : D0553420</li>
         <li>姓名 : 陳信維</li>
@@ -178,4 +197,7 @@
 
         </tr>
     </table>
+    <div class="footer">
+        逢甲大學
+    </div>
 </body>
