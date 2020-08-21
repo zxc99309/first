@@ -9,7 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
   <title>FBK購物網</title>
   <style>
     .jumbotron {
@@ -23,6 +25,10 @@
 
     .btn {
       margin: 0;
+    }
+
+    .carousel-caption {
+      color: black;
     }
   </style>
 </head>
@@ -40,15 +46,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">
+            <i class="fas fa-bookmark mr-1"></i>首頁 <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#in" data-toggle="modal">會員</a>
+          <a class="nav-link" href="#in" data-toggle="modal">
+            <i class="fas fa-user mr-1"></i>會員</a>
         </li>
         <!-- 上方清單 -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars mr-1"></i>
             分類
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,12 +72,13 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">購物車</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+            <i class="fas fa-cart-plus mr-1"></i>購物車</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="搜尋" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
       </form>
     </div>
   </nav>
@@ -115,85 +125,99 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-3 justify-content-center">
+      <div class="col-12 col-md-3" style="margin-top: 15px;">
         <!-- 左方清單 -->
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active ">
+          <a href="#" class="list-group-item list-group-item-action active">
             清單分類
           </a>
           <div>
-            <button class="btn btn-secondary dropdown-toggle alert alert-primary" type="button" id="dropdownMenuButton1"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-primary" type="button"
+              id="dropdownMenuButton-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
               3C
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-1">
               <a class="dropdown-item" href="#">電腦</a>
               <a class="dropdown-item" href="#">螢幕</a>
               <a class="dropdown-item" href="#">鍵盤滑鼠</a>
             </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-secondary" type="button" id="dropdownMenuButton2"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            通訊
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a class="dropdown-item" href="#">手機</a>
-            <a class="dropdown-item" href="#">平板</a>
-            <a class="dropdown-item" href="#">耳機</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-secondary" type="button"
+              id="dropdownMenuButton-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              通訊
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-2">
+              <a class="dropdown-item" href="#">手機</a>
+              <a class="dropdown-item" href="#">平板</a>
+              <a class="dropdown-item" href="#">耳機</a>
+            </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-success" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            數位
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">相機</a>
-            <a class="dropdown-item" href="#">空拍機</a>
-            <a class="dropdown-item" href="#">電玩</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-success" type="button"
+              id="dropdownMenuButton-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              數位
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-3">
+              <a class="dropdown-item" href="#">相機</a>
+              <a class="dropdown-item" href="#">空拍機</a>
+              <a class="dropdown-item" href="#">電玩</a>
+            </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-danger" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            家電
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">冰箱</a>
-            <a class="dropdown-item" href="#">洗衣機</a>
-            <a class="dropdown-item" href="#">冷氣</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-danger" type="button" id="dropdownMenuButton-4"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              家電
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-4">
+              <a class="dropdown-item" href="#">冰箱</a>
+              <a class="dropdown-item" href="#">洗衣機</a>
+              <a class="dropdown-item" href="#">冷氣</a>
+            </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-warning" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            日用
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">衛生紙</a>
-            <a class="dropdown-item" href="#">洗衣機</a>
-            <a class="dropdown-item" href="#">清潔劑</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-warning" type="button"
+              id="dropdownMenuButton-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              日用
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-5">
+              <a class="dropdown-item" href="#">衛生紙</a>
+              <a class="dropdown-item" href="#">洗衣機</a>
+              <a class="dropdown-item" href="#">清潔劑</a>
+            </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-info" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            生活
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">家具</a>
-            <a class="dropdown-item" href="#">床墊</a>
-            <a class="dropdown-item" href="#">鍋具</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-info" type="button" id="dropdownMenuButton-6"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              生活
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-6">
+              <a class="dropdown-item" href="#">家具</a>
+              <a class="dropdown-item" href="#">床墊</a>
+              <a class="dropdown-item" href="#">鍋具</a>
+            </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-light" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            食品
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">飲料</a>
-            <a class="dropdown-item" href="#">零食</a>
-            <a class="dropdown-item" href="#">水果</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-light" type="button" id="dropdownMenuButton-7"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              食品
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-7">
+              <a class="dropdown-item" href="#">飲料</a>
+              <a class="dropdown-item" href="#">零食</a>
+              <a class="dropdown-item" href="#">水果</a>
+            </div>
           </div>
-          <button class="btn btn-secondary dropdown-toggle alert alert-dark" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
-            美妝
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">保養品</a>
-            <a class="dropdown-item" href="#">香水</a>
-            <a class="dropdown-item" href="#">肥皂</a>
+          <div>
+            <button class="btn btn-secondary btn-block dropdown-toggle alert alert-dark" type="button" id="dropdownMenuButton-8"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" role="alert">
+              美妝
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-8">
+              <a class="dropdown-item" href="#">保養品</a>
+              <a class="dropdown-item" href="#">香水</a>
+              <a class="dropdown-item" href="#">肥皂</a>
+            </div>
           </div>
         </div>
       </div>
@@ -305,6 +329,7 @@
 
   </div>
 
+
   <!-- 登入畫面 -->
   <div class="modal" id="in" tabindex="-1">
     <div class="modal-dialog">
@@ -355,6 +380,9 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+    integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
     crossorigin="anonymous"></script>
 </body>
 
