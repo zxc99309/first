@@ -1,0 +1,234 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <title>Lab 08</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&family=Noto+Serif+TC:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(29, 31, 31);
+            height: 100%;
+            margin: 0;
+        }
+
+
+        table {
+            border-radius: 30px;
+            font-size: 20px;
+        }
+
+        th:nth-child(1) {
+            border-radius: 30px 0 0 0
+        }
+
+        th:nth-child(6) {
+            border-radius: 0 30px 0 0
+        }
+
+        tr:nth-child(9) td:nth-child(1) {
+            border-radius: 0 0 0 30px
+        }
+
+        tr:nth-child(9) td:nth-child(2) {
+            border-radius: 0 0 30px 0
+        }
+
+
+        tr th {
+            font-family: 'Noto Sans TC', sans-serif;
+            text-align: center;
+        }
+
+        tr td {
+            text-align: center;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        tr td:first-child {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        tr:nth-child(4n+4) td:nth-child(2) {
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: white;
+            text-shadow: 0px 0px 5px rgb(255, 255, 255),
+                0px 0px 10px rgb(255, 255, 255),
+                0px 0px 15px rgb(255, 255, 255),
+                0px 0px 40px rgb(25, 235, 95),
+                0px 0px 70px rgb(25, 235, 95);
+        }
+
+        td:hover {
+            background-color: black;
+            font-weight: 900;
+        }
+
+        div.container {
+            background-color: rgb(116, 111, 111);
+            color: white;
+            text-align: center;
+            font-size: 34px;
+            font-weight: bold;
+            font-family: 'Noto Sans TC', sans-serif;
+            width: 100%;
+        }
+
+        ul {
+            font-size: 20px;
+            font-family: 'Noto Sans TC', sans-serif;
+            color: white;
+        }
+    </style>
+
+</head>
+
+
+
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" style="text-align: right;">
+                逢甲大學
+            </div>
+            <div class="col-sm" style="text-align: left;">
+                選課系統
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="text-align: right;">
+                學號 : D0553420
+            </div>
+            <div class="col" style="text-align: left;">
+                姓名 : 陳信維
+            </div>
+        </div>
+        <button type="button" class="table table-sm table-dark">
+            <i class="fas fa-user mr-3"></i>登出</button>
+        <div class="d-flex bd-highlight">
+            <div class="p-0 flex-shrink-1 bd-highlight">
+                <ul>
+                    <button type="button" class="table table-sm table-dark">
+                        <i class="fas fa-book-open mr-3"></i>我的課表</button>
+                    <button type="button" class="table table-sm table-dark">
+                        <i class="far fa-address-card mr-3"></i>學生資料</button>
+                    <button type="button" class="table table-sm table-dark">
+                        <i class="fas fa-book-dead mr-3"></i>成績查詢</button>
+                    <button type="button" class="table table-sm table-dark">
+                        <i class="fas fa-bookmark mr-4"></i>考程表</button>
+                    <button type="button" class="table table-sm table-dark">
+                        <i class="fas fa-briefcase-medical mr-3"></i>請假系統</button>
+                </ul>
+                <img src="https://media.istockphoto.com/vectors/school-talk-students-lesson-pictogram-icon-vector-id1185309474"
+                    width="300px;">
+            </div>
+            <div class="p-2 w-100 bd-highlight" style="width: 400px;">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>星期一</th>
+                            <th>星期二</th>
+                            <th>星期三</th>
+                            <th>星期四</th>
+                            <th>星期五</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:10</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                            <td>軟體工程專題</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                        </tr>
+                        <tr>
+                            <td>10:10</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                            <td>軟體工程專題</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                        </tr>
+                        <tr>
+                            <td>11:10</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                            <td>軟體工程專題</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                        </tr>
+                        <tr>
+                            <td>12:10</td>
+                            <td colspan="5"><b>午休</b>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>13:10</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                            <td>資訊概論</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                        </tr>
+                        <tr>
+                            <td>14:10</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                            <td>資訊概論</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                        </tr>
+                        <tr>
+                            <td>15:10</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                            <td>資訊概論</td>
+                            <td>Python基礎程式設計</td>
+                            <td>Web基礎程式設計</td>
+                        </tr>
+                        <tr>
+                            <td>16:10</td>
+                            <td colspan="5"><b>放學</b></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+            integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+            crossorigin="anonymous"></script>
+</body>
