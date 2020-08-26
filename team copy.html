@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
     crossorigin="anonymous" />
+  <script type="text/javascript" src="jquery.js"></script>
   <title>FBK購物網</title>
   <style>
     .jumbotron {
@@ -342,6 +343,16 @@
             </article>
           </div>
         </div>
+        <form name="form1" method="post" action="" >
+          <center>
+            <p>
+              <font size="5" color="#0000FF" face="華文細黑">您在本站已停留：</font>
+            </p>
+            <p>
+              <input name="textarea" type="text" value="" class="justify-content-center">
+            </p>
+          </center>
+
       </div>
       <div class="col-12 col-md-9">
         <!-- 右方商品列 -->
@@ -671,6 +682,32 @@
       }
     }
   </script>
+
+
+  <script language="javascript">
+    var second = 0;
+    var minute = 0;
+    var hour = 0;
+    window.setTimeout("interval();waring()", 1000);
+    function interval() {
+      second++;
+      if (second == 60) {
+        second = 0; minute += 1;
+      }
+      if (minute == 60) {
+        minute = 0; hour += 1;
+      }
+      document.form1.textarea.value =" " + hour + " 時 " + minute + " 分 " + second + " 秒";
+      window.setTimeout("interval();waring()", 1000);
+
+    }
+    function waring() {
+      if (minute % 2 == 0 & second == 0) {
+        alert('講太久了，報告結束囉')
+      }
+    }
+  </script>
+
 </body>
 
 </html>
